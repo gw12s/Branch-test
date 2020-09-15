@@ -50,10 +50,11 @@ Create a new branch, implement a feature, and then submit a pull request back in
 # Instructions
 
 ## Part I: Branching and Submitting a Pull Request
-
-*"new-branch" will be used as the branch name in the example below - replace with your branch name*<br>
+#### Before you begin
+--------
+`new-branch` will be used as the branch name in the example below - replace with your branch name<br>
 *once you have made and saved any changes to the directory you will follow these steps to push these changes to GitHub*
-
+--------
 * Navigate to your current working directory
 
 * Run the following command in your terminal to create and checkout to a new branch:
@@ -80,19 +81,14 @@ Create a new branch, implement a feature, and then submit a pull request back in
 
 ## Part II: Reviewing a Pull Request
 
-* In this section, we will review the pull request from Part I and merge it into master. **A different project member should complete this section while others observe**.
-
-* Clone the repo to your computer if you haven't already done so and use the cd command to get into it.
-
-* First, you will want to test the changes introduced by the `add-new-python-script` branch locally. To examine the new branch on your local machine, run the following commands in your terminal:
-
+* First, you will want to test the changes introduced by the `new-branch` branch locally (on your computer). To examine the new branch on your local machine, run the following commands in your terminal:
+    * here you are pulling the code in from "new-branch" to run it on your computer to make sure it works properly before merging with the `master` branch
+    * "fetch --all" pulls all of the code from the remote repo (GitHub) to your local repo (your computer)
   `git fetch --all`
 
-  `git checkout add-new-python-script`
+  `git checkout new-branch`
 
-* This code should bring the copy of the `add-new-python-script` branch that's on GitHub onto your computer.
-
-  * Make sure this worked by verifying that there's an `data_collection.py` file in your local repo.
+* This code should bring the copy of the `new-branch` branch that's on GitHub onto your computer.
 
   * Normally you'd run the code here to make sure everything works properly.
 
@@ -100,7 +96,7 @@ Create a new branch, implement a feature, and then submit a pull request back in
 
   `git checkout master`
 
-* Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `add-new-python-script` pull request from the list.
+* Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `new-branch` pull request from the list.
 
 * At the next page select the option to see the "Files changed."
 
