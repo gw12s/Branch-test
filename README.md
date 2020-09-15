@@ -23,11 +23,9 @@ Create a Github repository and add group members as collaborators.
 
 # Students Do: Protect Master Branch
 
-In this activity, we will protect our repo's master branch.
+Protecting our repo's master branch. - this only needs to be used on the master branch, or any branches that will house finalized code.
 
 ## Instructions
-
-* Only one member per project group needs to complete this activity. 
 
 * Navigate back to the repo's "Settings" page and then select "Branches" from the left sidebar.
 
@@ -36,45 +34,47 @@ In this activity, we will protect our repo's master branch.
 * Branch name pattern: "master" (or name of the branch you want to apply the branch protection rules to)
 
 * You should be presented with some options, check off the following:
-! [branch-protection-options](Images/branch-protection-options.png)
+
+![branch-protection-options](Images/branch-protection-options.png)
 
 * If completed successfully below image should appear and no one should be able to push directly to the master branch. Instead, all changes must be made in the form of pull requests that are to be reviewed by another group member.
 
-! [branch-protection-complete](Images/branch-protection-complete.png)
+![branch-protection-complete](Images/branch-protection-complete.png)
 
 
 # Git Branching/Pushing
 
-Create a new branch, implement a feature, and then submit a pull request back into master. We will also cover reviewing pull requests and merging them into master.
+Create a new branch, implement a feature, and then submit a pull request back into master. We will also cover reviewing pull requests and merging them into master.<br>
+*A new branch will need to be created for each commit made to remote repo (GitHub)*
 
 # Instructions
 
 ## Part I: Branching and Submitting a Pull Request
 
-* In this section, we will create a branch, add a feature, and submit a pull request. **Only one group member should complete this section, everyone else should observe.**
+*"new-branch" will be used as the branch name in the example below - replace with your branch name*<br>
+*once you have made and saved any changes to the directory you will follow these steps to push these changes to GitHub*
+
+* Navigate to your current working directory
 
 * Run the following command in your terminal to create and checkout to a new branch:
     * "-b" creates the new branch
   `git checkout -b new-branch`
   
-
-* You should now be on a new branch named "add-new-python-script." In order to verify that this worked, run the following command in your terminal:
+* You should now be on a new branch named "new-branch" In order to verify that this worked, run the following command in your terminal:
 
   `git branch`
 
-* You should see two branches listed: `master` and `add-new-python-script`. The `add-new-python-script` branch should have an asterisk to the left of it. This indicates that this is the branch you're currently on.
+* You should see two branches listed: `master` and `new-branch`. The `new-branch` branch should have an asterisk to the left of it. This indicates that this is the branch you're currently on.
 
-* At the root of the repo, create a new file named `data_collection.py`. Inside this file, add code to import the `requests` library and save.
+* In your terminal, add `git add -A` "-A" selects all, and commit `git commit -m "<message>"` the changes. Then push up your code by running following in your terminal:
+    * "origin -branch name-" tells what branch to push to  
+  `git push origin new-branch`
 
-* In your terminal, add and commit the changes. Then push up your code by running following in your terminal:
-
-  `git push origin add-new-python-script`
-
-* This should push up your code to to GitHub on a branch with the same name (`add-new-python-script`).
+* This should push up your code to to GitHub on a branch with the same name (`new-branch`).
 
 * Go to the main repo page at github.com and you should see an button that says "Compare & pull request." Click this.
 
-* On the next screen, add a description of the work that was done in the text area and click the "Pull Request" button.
+* On the next screen, add a description of the work that was done in the text area and click the "Create pull request" button.
 
 * If completed successfully, you should see the pull request listed under the repo's "Pull request" tab.
 
